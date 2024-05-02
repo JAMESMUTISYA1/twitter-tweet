@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="sayIt, fun, twitter, message">
+    <meta name="description" content="Your little web app to write tweets as a verified tweep. Just say what's on your mind. All about having fun!">
+    <title>sayIt - just say it</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+
+
+    <section class="home">
+        <div class="notification" id="fade-element" class="fade-element">
+            <p>
+                -Tap the three dots to open this menu. <br> -Double tap any background to randomly change it. <br> -Tap on text to edit it. <br> -Tap profile pic to change it.
+            </p>
+        </div>
+
+        <div id="container" class="dark">
+            <div class="upper">
+                <div class="upper-left">
+                    <div class="pic">
+                        <img id="avatar" alt="">
+                    </div>
+                    <div class="names">
+                        <p class="displayName">
+                            <span contenteditable="true" spellcheck="false" id="myName">Bigfoot</span>
+                            <img id="tick" src="images/tick.png" alt="">
+                        </p>
+                        <p class="username">
+                            @<span contenteditable="true" spellcheck="false">_biggie</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="dots">...</p>
+            </div>
+            <div class="text">
+                <p contenteditable="true" spellcheck="false">
+                    Just say it.
+                </p>
+            </div>
+            <div class="bottom">
+                <p class="stats">
+                    <iconify-icon icon="ei:comment" id="commentsIcon"></iconify-icon> <span id="comments"></span>
+                </p>
+                <p class="stats">
+                    <iconify-icon icon="system-uicons:retweet" id="retweetsIcon"></iconify-icon> <span id="retweets"></span>
+                </p>
+                <p class="stats">
+                    <iconify-icon icon="ph:heart" id="likesIcon"></iconify-icon> <span id="likes"></span>
+                </p>
+            </div>
+        </div>
+
+        <div id="toMessage">
+            <a href='/msg'>
+                Message Theme
+                <iconify-icon icon="material-symbols:arrow-right-alt" id="iconify"></iconify-icon>
+            </a>
+        </div>
+        <p id="copy">&copy; Bigfoot</p>
+    </section>
+
+
+    <div class="warning">
+        <p>
+            Oops ): <br> This little web app is meant for phone screen sizes. <br> Quick tip though, you can right click and inpect in your browser to see how it works in mobile screen size.
+            <br><br><br>
+            <span>regards Bigfoot :)</span>
+        </p>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

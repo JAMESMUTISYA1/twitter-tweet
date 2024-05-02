@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Roboto:wght@400;700&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.dark {
+    color: rgba(255, 255, 255, 0.866);
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.light {
+    color: rgba(0, 0, 0, 0.866);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.home #container {
+    position: relative;
+    padding: 1.2rem;
+    padding-bottom: 0.8rem;
+    margin-top: -9rem;
+    width: 80vw;
+    border-radius: 10px;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.home #container .upper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home #container .upper .upper-left {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.home #container .upper .upper-left .pic {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.home #container .upper .upper-left .pic #avatar {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.home #container .upper .upper-left .names {
+    position: relative;
+}
+
+.home #container .upper .upper-left .names .displayName {
+    font-weight: 700;
+}
+
+.home #container .upper .upper-left .names .displayName #myName {
+    padding-right: 0.1rem;
+}
+
+.home #container .upper .upper-left .names .displayName #tick {
+    position: relative;
+    top: 0.1rem;
+    left: -0.2rem;
+    height: 18px;
+}
+
+.home #container .upper .upper-left .names .username {
+    font-size: 0.8rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.home #container .upper .dots {
+    font-size: 2rem;
+    position: relative;
+    top: -1.2rem;
+}
+
+.home #container .text {
+    margin-top: 0.8rem;
+}
+
+.home #container .bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.home #container .bottom .stats {
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.home #container .bottom #retweets {
+    opacity: 0.8;
+}
+
+.home #container .bottom #retweetsIcon {
+    font-size: 1.25rem;
+    margin-bottom: -0.3rem;
+}
+
+.home #container .bottom #likes {
+    opacity: 0.8;
+}
+
+.home #container .bottom #likesIcon {
+    font-size: 1.1rem;
+    opacity: 0.86;
+    margin-bottom: -0.24rem;
+}
+
+.home #container .bottom #comments {
+    position: relative;
+    top: -0.38rem;
+    left: -0.15rem;
+    opacity: 0.8;
+}
+
+.home #container .bottom #commentsIcon {
+    font-size: 1.4rem;
+    opacity: 1;
+    filter: brightness(150%);
+}
+
+.home #copy {
+    position: absolute;
+    bottom: 0;
+    opacity: 0.1;
+}
+
+#toTwitter {
+    position: absolute;
+    bottom: 4rem;
+}
+
+#toTwitter a {
+    color: rgba(255, 255, 255, 0.714);
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 0.5rem;
+    background: rgba(0, 0, 0, 0.7);
+    font-style: italic;
+}
+
+#toTwitter a i {
+    opacity: 0.8;
+}
+
+.msg-page {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: url(../images/3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Comic Neue", "Comic sans ms";
+}
+
+.msg-page .overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background: rgba(0, 0, 0, 0);
+}
+
+.msg-page .container {
+    position: relative;
+    padding: 1.2rem;
+    margin-top: -9rem;
+    width: 90vw;
+    border-radius: 10px;
+    background: rgba(35, 35, 35, 0.98);
+    color: rgba(255, 255, 255, 0.928);
+    opacity: 0.98;
+}
+
+.msg-page .container .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.msg-page .container .top #msg-title {
+    font-size: 0.8rem;
+}
+
+.msg-page .container .top #now {
+    font-size: 0.7rem;
+}
+
+.msg-page .container .msg #sender {
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+}
+
+.msg-page .container .msg #txt {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.msg-page .container .msg #txt::after {
+    mix-blend-mode: difference;
+}
+
+.msg-page #copy {
+    position: absolute;
+    bottom: 0;
+    opacity: 0.1;
+}
+
+#toMessage {
+    position: absolute;
+    bottom: 4rem;
+}
+
+#toMessage a {
+    color: rgba(255, 255, 255, 0.714);
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 0.5rem;
+    background: rgba(0, 0, 0, 0.7);
+    font-style: italic;
+}
+
+#toMessage a #iconify {
+    font-size: 0.8rem;
+    margin-bottom: -0.2rem;
+}
+
+.notification {
+    position: absolute;
+    top: 2rem;
+    background: rgba(51, 51, 51, 0.838);
+    color: rgba(255, 255, 255, 0.85);
+    width: 90vw;
+    border-radius: 5px;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    opacity: 0;
+}
+
+.fade-element {
+    transition: opacity 5s ease-in;
+}
+
+.warning {
+    display: none;
+}
+
+@media (min-width: 601px) {
+    .warning {
+        z-index: 10;
+        position: absolute;
+        top: 5vh;
+        left: 5vw;
+        display: block;
+        width: 90vw;
+        height: 90vh;
+        border-radius: 20px;
+        background: #333;
+    }
+    .warning p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(19, 231, 0);
+        font-family: "Courier New", Courier, monospace;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .warning p span {
+        font-size: 1.5rem;
+        padding-left: 30vw;
+        white-space: nowrap;
+    }
+}
+
+/*# sourceMappingURL=styles.css.map */
